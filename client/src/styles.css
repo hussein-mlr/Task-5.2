@@ -10,3 +10,10 @@ body { @apply bg-zinc-50 text-zinc-900; }
 .btn { @apply inline-flex items-center gap-2 rounded-lg px-4 py-2 font-medium border border-zinc-300 hover:bg-zinc-100; }
 .input { @apply w-full rounded-lg border border-zinc-300 px-3 py-2; }
 .card { @apply rounded-2xl border border-zinc-200 p-4 shadow-sm bg-white; }
+
+/* Formatting allowed in review bodies (see lib/sanitize.js) — Tailwind's reset hides most of it. */
+.review-body a { @apply text-blue-700 underline; }
+.review-body ul { @apply list-disc pl-5; }
+.review-body ol { @apply list-decimal pl-5; }
+.review-body blockquote { @apply border-l-4 border-zinc-300 pl-3 text-zinc-600; }
+.review-body code { @apply rounded bg-zinc-100 px-1 font-mono; }
